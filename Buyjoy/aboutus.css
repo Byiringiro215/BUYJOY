@@ -1,0 +1,373 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+@keyframes fadeIn{
+    0%{
+       opacity: 0;
+     }
+     50%{
+         opacity: 0.5;
+     }
+     100%{
+       opacity: 1;
+     }
+    }
+.aboutus-header{
+    height: 8rem;
+   padding: 2rem 3rem;
+  background: linear-gradient(#d3d3,#d3d3,white);
+  position: fixed;
+  top: 0;
+  width: 100%;
+ backdrop-filter: blur(10px);
+ z-index: 1;
+}
+ hr{
+    color: #d3d3;
+    border: 1px solid #d3d3;
+}
+.aboutus-header  .links a{
+text-decoration: none;
+color: rgba(221, 51, 221, 0.5);
+}
+.aboutus-header .links a:focus{
+    color: rgba(221, 51, 221, 0.377);
+    text-decoration: underline;
+}
+.aboutus-top{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+    margin: 10rem 2rem;
+}
+.top-left{
+    background: url('./excited.jpg') no-repeat;
+    background-size: cover;
+    height: 22rem;
+    
+    
+}
+.discount img{
+   
+height: 30px;
+width: 30px;
+border-radius: 50%;
+}
+.discount{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid grey;
+    border-radius: 50%;
+    padding: 0.5rem 2rem;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    font-size: 12px;
+    margin: 3rem 0rem 0rem 32rem;
+}
+.top-right{
+   padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    animation: fadeIn 3s ease-in-out;
+   
+}
+.top-right h3{
+    /* color: blue; */
+    color: rgba(128, 128, 128, 0.856);
+    font-size: 14px;
+}
+.top-right h2{
+    font-size: 17px;
+}
+.top-right p{
+    font-size: 13px;
+    width: 100%;
+    word-break: break-word;
+    
+}
+.top-right ul li{
+    list-style-type: "👌";
+    color: gray;
+    font-size: 14px;
+}
+.top-right button{
+    height: 2rem;
+    width: 7rem;
+    border-radius: 10px;
+    border:1px solid blue;
+    background-color: white;
+    cursor: pointer;
+    color: blue;
+}
+.top-right button:hover{
+    background-color: blue;
+    color: white;
+    transition: .3s ease-in-out;
+}
+
+@media(max-width:720px){
+    .aboutus-top{
+        grid-template-columns: 1fr;
+    }
+    .discount{
+        margin-right: 2rem;
+    }
+    .aboutus-top{
+        margin-left: 0.5rem;
+    }
+}
+
+/* why-choose-us */
+.why-choose-us{
+    margin: 1rem;
+}
+.why-choose-us-header{
+    margin-bottom: 3rem;
+}
+.why-choose-us-header h2{
+    text-align: center;
+}
+.why-choose-us-header p{
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 14px;
+}
+
+.choices{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+    margin: 0 4rem;
+}
+.choice1{
+    height: 10rem;
+    width: 18rem;
+    padding: 2rem;
+
+    border-radius: 10px;
+    box-shadow: 3px 3px 7px blue;
+
+}
+.choice1:hover{
+    transform: scale(1.03) translateY(-5px);
+    transition:transform .4s ease-in-out;
+}
+.choice1 i{
+    font-size: 25px;
+    color:blue;
+   display: flex;
+   justify-content: center;
+   margin-bottom:1rem ;
+}
+.choice1 h3{
+    font-size: 14px;
+    text-align: center;
+}
+.choice1 p{
+    text-align: center;
+    color: grey;
+    font-size: 12px;
+}
+
+@media(max-width:720px){
+    .choices{
+        grid-template-columns: repeat(2,1fr);
+        margin-left: 1rem;
+    }
+}
+@media(max-width:320px){
+    .choices{
+        grid-template-columns: 1fr;
+       margin-left: 5rem;
+    }
+}
+
+/* what-clients-say */
+.what-clients-say{
+    margin: 5rem 2rem;
+}
+.what-clients-say-header h1{
+text-align: center;
+margin-bottom: 2rem;
+}
+.what-clients-say-header span{
+    color: blue;
+}
+.what-clients-say-header p{
+    font-size: 13px;
+    text-align: center;
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-top: 5rem
+}
+.card{
+    position: relative;
+    height: 10rem;
+    width: 20rem;
+    padding: 3rem 1rem;
+    box-shadow: 3px 3px 5px grey;
+    border-radius: 10px;
+}
+.card:hover{
+    transform: translateX(10px);
+    transition: .3s ease-in-out;
+}
+.card img{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    margin-top: -4rem;
+    border-radius: 50%;
+   
+}
+.card p{
+    font-size: 12px;
+}
+
+@media(max-width:720px){
+    .cards{
+        grid-template-columns: 2fr;
+        margin-left: 5rem;
+        gap: 3rem;
+    }
+}
+
+
+/* reviews */
+
+.reviews{
+    display: flex;
+    gap: 2rem;
+    margin-left: 16rem;
+    margin-bottom: 3rem;
+}
+.review{
+    
+    padding: 10px;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    box-shadow: 3px 3px 5px grey;
+    border-radius: 10px;
+    width: 10rem;
+}
+.review h1{
+font-size: 12px;
+}
+
+.review i{
+    color: blue;
+    font-size: 40px;
+}
+.review p{
+    font-size: 12px;
+}
+.review-info{
+    margin-left: 5px;
+}
+.review:hover{
+    transform: translateY(5px);
+    transition: .3s ease-in-out;
+}
+
+@media(max-width:720px){
+    .reviews{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin-left: 3rem;
+        gap: 1;
+    }
+}
+
+
+/* footer */
+
+.footer{
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    gap: 2rem;
+    background-color:rgb(34, 34, 34);
+    font-family: 'Poppins';
+    padding: 2rem;
+  }
+  .footer-left{
+   
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .footer-left .footer-icons{
+    display: flex;
+    gap: 1rem;
+  }
+  .footer-left .footer-icons i{
+    font-size: 25px;
+    cursor: pointer;
+  border: 2px solid gray;
+  border-radius: 50%;
+  padding: 5px;
+  }
+  .footer-left .footer-icons i:hover{
+    transform: scale(1.05);
+    transition: .3s ease-in-out;
+    transform: translateY(-5px);
+  
+  }
+  .footer-center,.footer-right{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .footer-center li:hover{
+    cursor: pointer;
+   text-decoration: underline;
+   transform: translateY(-2px);
+  }
+  
+  .footer-right input{
+    height: 3rem;
+    width: 20rem;
+    font-family: 'Poppins';
+    padding: 0.5rem;
+  }
+  .footer-right input:focus::placeholder{
+  transform: translateY(-10px);
+  transition: transform .3s ease-in;
+  }
+  
+  .footer-right button{
+    height: 3rem;
+    width: 5rem;
+    cursor: pointer;
+    margin-left: 0;
+    color: white;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    outline: none;
+    border: none;
+    background-color: blue;
+  }
+  
+  
+  .footer h2{
+    color: rgba(255, 255, 255, 0.788);
+  }
+  .footer p,li,i{
+    color: rgba(255, 255, 255, 0.63);
+    font-size: 14px;
+  }
+  
+  @media(max-width:720px){
+    .footer{
+      grid-template-columns: 1fr;
+      
+    }
+  }

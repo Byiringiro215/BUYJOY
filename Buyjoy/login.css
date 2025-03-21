@@ -1,0 +1,102 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+.login{
+    margin: 3rem 25rem;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    justify-content: center;
+    border: 2px solid rgba(0, 0, 255, 0.37);
+ box-shadow: 1px 1px 10px blue;
+    border-radius: 10px;
+    width: 25rem;
+    height: 35rem;
+    
+}
+.login h1{
+    color: blue;
+    text-align: center;
+    font-weight: bold;
+
+}
+.login h2{
+    font-size: 16px;
+    text-align: center;
+    margin-top: 1rem;
+}
+.login h2 span{
+    color: blue;
+}
+form{
+    margin-top: 1rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+form input{
+    height: 3rem;
+    width: 23rem;
+    padding: 10px;
+    border: transparent;
+box-shadow: 3px 3px 10px grey;
+
+}
+
+form input:focus::placeholder{
+    transform: translateY(-7px);
+    transition: .2s ease-in;
+}
+button{
+    height: 3rem;
+    border-radius: 10px;
+    background-color: blue;
+    border: none;
+    outline: none;
+    color: skyblue;
+    cursor: pointer;
+}
+.orsignin{
+    text-align: center;
+    font-size: 13px;
+    color: gray;
+}
+.icons{
+    display: flex;
+    margin-left: 9rem;
+    gap: 1rem;
+    margin-top: 1rem;
+    font-size: 20px;
+    color: white;
+    margin-bottom: 1rem;
+   
+}
+.icons i{
+    border: 1px solid blue;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    padding: 5px;
+    background: blue;
+}
+.icons i:hover{
+    transform: translateY(-5px) scale(1.05);
+    transition: transform 0.3s ease;
+
+    transition: .3s ease-in-out;
+    cursor: pointer;
+}
+.dont-have-account{
+    color: gray;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.dont-have-account a{
+    color: blue;
+}
